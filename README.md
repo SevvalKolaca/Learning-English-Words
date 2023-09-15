@@ -1,3 +1,3 @@
 # Learning-English-Words
 
-# Learning 5 new B1 level English words every day challenge
+# "Learning 5 B1 level English Words Every Day" Challenge
