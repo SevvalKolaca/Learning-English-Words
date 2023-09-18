@@ -57,13 +57,13 @@ def version2(fileName):  # Updates are made via the same file
         todays_list = random.choices(unlearned_words_list, k=5)
         print(todays_list)
 
-    for word in todays_list:                       # The value of today's words has been updated to 1
-        dictionary[word] = 1
+    # for word in todays_list:                       
+    #     dictionary[word] = 1
 
     for row in sheet.iter_rows(min_row=2, max_row=sheet.max_row, min_col=1, max_col=2):
         word = row[0].value
         if word in todays_list:
-            row[1].value = 1
+            row[1].value = 1                       # The value of today's words has been updated to 1
 
     workbook.save(fileName)
     workbook.close()
